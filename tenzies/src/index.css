@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #0B2434;
+  font-family: 'Karla', sans-serif;
+  overflow:hidden;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+.app--container{
+  margin:0;
+  width: 100%;
+  height: inherit;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+main{
+  background-color: #FFFFFF;
+  width:600px;
+  height: 600px;
+  border-radius: 6.66px;
+  padding:20px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 1rem;
+  text-align: center;
+  width:420px;
+}
+
+.dice{
+  width: 70px;
+  height: 70px;
+  padding:5px;
+  border-radius: 5px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  text-align: center;
+  color:#2B283A;
+  box-shadow:0px 2px 8px rgba(0, 0, 0, 0.30);
+  cursor:pointer;
+}
+
+.dice--row{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:5px;
+  margin-bottom:5px; 
+}
+.dice--value{
+ /* border-radius: 100%;
+  background-color:black;
+  width:10px;
+  height: 10px; */
+  border: solid black;
+  border-radius: 100%;
+  background-color: black;
+  width:15px;
+  height: 15px;
+  margin:auto;
+}
+
+.dice--container{
+  margin-top:3rem;
+  display:grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 10px;
+  row-gap: 20px;
+  width: 450px;
+}
+
+main button{
+margin-top:5rem;
+border-radius: 5px;
+border-style: none;
+background-color: #5035FF;
+padding:20px 70px 20px 70px;
+color:white;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+cursor:pointer;
+}
+
+.timer{
+width:100px;
+height: 50px;
+padding:0;
+display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.timer > h2{
+  margin:0;
+}
+
+main button:focus {
+  outline: none;
+}
+
+main button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.held{
+  background-color: #59E391;
+}
+
+.ranking--button{
+  width:50px;
+height: 50px;
+padding:0;
+display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.ranking{
+  background-color: white;
+  margin-left:10rem;
+  padding:1rem;
+}
