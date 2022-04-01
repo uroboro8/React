@@ -24,7 +24,6 @@ body {
   justify-content: center;
   margin: 1rem;
 }
-
 .home {
   width: 100%;
   height: 100%;
@@ -34,22 +33,22 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column; */
   align-items: center;
   justify-content: center;
   color: #293264;
 }
 
-.home--screen>h1 {
+.home--screen h1 {
   margin-bottom: 0;
 }
 
-.home--screen>h3 {
+.home--screen h3 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.home--screen>button {
+.home--screen button {
   border-radius: 10px;
   color: white;
   background-color: #4D5B9E;
@@ -59,13 +58,28 @@ body {
   margin-top: 1.5rem;
 }
 
+.home--container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow:0px 2px 8px rgba(0, 0, 0, 0.30);
+  padding:3rem 10rem 3rem 10rem;
+}
+
 .answers--container {
   width: 800px;
+}
+
+.answers--container h3{
+  font-size:large;
+  font-weight: bold;
 }
 
 .answers {
   display: flex;
   align-items: center;
+  margin-top:1rem;
 }
 
 .answer--button {
@@ -123,4 +137,20 @@ form div {
 
 form fieldset{
   padding:1rem 1.5rem 1rem 1.5rem;
+}
+
+.ranking{
+  border:solid black 3px;
+  border-radius: 10px;
+  margin-left:2rem;
+  padding:1rem;
+  background-color: #DC3545;
+  color:black;
+}
+.ranking h3{
+  margin:0;
+  margin-bottom:.4 rem;
+}
+.ranking--button{
+  cursor:pointer;
 }

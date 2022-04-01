@@ -9,6 +9,7 @@ function App() {
   const [checked, setChecked] = React.useState(false)
   const [apiParams, setApiParams] = React.useState({ categoryId: 15, categoryName: "video-games", difficulty: "easy" })
   const [points, setPoints] = React.useState(0)
+  const [ranking,setRanking] = React.useState([])
 
   React.useEffect(() => {
     if (questions.isFetched) {
@@ -41,6 +42,7 @@ function App() {
         })
       }
 
+      setRanking(scores)
       localStorage.setItem("scores", JSON.stringify(scores))
 
     }
@@ -117,11 +119,12 @@ function App() {
     />
   })
 
+
   return (
     <div className={!questions.questions.length ? "home" : "app--container"}>
       {!questions.questions.length
         ?
-        <Home getQuestions={getQuestions} />
+        <Home getQuestions={getQuestions} ranking={ranking}/>
         :
         <>
           {questionsArray}
